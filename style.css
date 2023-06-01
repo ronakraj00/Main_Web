@@ -1,0 +1,84 @@
+img{
+    height: auto;
+    width: 200px;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-auto-columns: 200px;
+    grid-auto-rows: auto;
+    gap: 40px;
+    place-content: space-evenly;
+    margin: 10px;
+}
+
+body{
+    background-color: rgb(230,256,230);
+}
+
+/* *{
+    border: 1px solid blue;
+} */
+
+.container div{
+    text-align: center;
+    box-shadow: 16px 10px 12px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 2em;
+    text-shadow: 0.1em 0.1em 8px white;
+}
+
+footer{
+    text-align: center;
+}
+
+.container div{
+    margin: 10px 0 10px 0;
+}
+
+.container div:hover{
+    transform: scale(1.06);
+}
+
+section{
+    text-align: center;
+}
+
+header{
+    color: red;
+    transform: scale(1.02);
+    animation: header2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease;
+}
+
+@keyframes header2{
+    10%{
+        color: red;
+        text-shadow: 1px 1px 6px blue;
+    }
+    40%{
+        color:blue;
+        text-shadow: 1px 1px 6px green;
+    }
+    70%{
+        color:green;
+        text-shadow: 1px 1px 6px red;
+    }
+}
